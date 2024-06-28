@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolater</title>
+    <style>
+      .contener {
+        width: 30%;
+        background-color: aqua;
+        border-radius: 26px;
+        flex-wrap: wrap;
+      }
+      input {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 90%;
+        height: 70px;
+        border-radius: 20px;
+        border: none;
+        font-size: 30px;
+      }
+
+      .btn {
+        border-radius: 20px;
+        font-size: 30px;
+        height: 50px;
+        width: 100px;
+        margin: 7px;
+        border: 1px solid rgb(33, 33, 36);
+      }
+      .red {
+        background-color: rgb(218, 32, 32);
+        border: none;
+        color: aliceblue;
+      }
+      .org {
+        background-color: rgb(34, 98, 236);
+        border: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="contener">
+        <div class="in">
+          <input id="inp" type="text" readonly />
+        </div>
+        <div class="bbb">
+          <button
+            class="btn red"
+            onclick="
+        despla = '';
+        document.querySelector ('#inp').value = despla;
+        "
+          >
+            C
+          </button>
+          <button
+            class="btn"
+            onclick="
+      despla = despla +'1';
+       document.querySelector ('#inp').value = despla;
+      "
+          >
+            1
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '2';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            2
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '+';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            +
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '3';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            3
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '4';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            4
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '-';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            -
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '5';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            5
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '6';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            6
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '*';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            *
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '7';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            7
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '8';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            8
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '/';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            /
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '9';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            9
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '0';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            0
+          </button>
+          <button
+            class="btn"
+            onclick="
+    despla = despla + '.';
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            .
+          </button>
+          <button
+            class="btn org"
+            onclick="
+          let rez = eval(despla)
+    despla = rez;
+    document.querySelector ('#inp').value = despla;
+    "
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </center>
+    <script>
+      let despla = "";
+      document.querySelector("#inp").value = despla;
+    </script>
+  </body>
+</html>
